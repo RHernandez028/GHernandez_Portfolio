@@ -97,10 +97,45 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Header */
+   body{
+       display: block;
+       width: 100%;
+   }
 
+/* Nav */
+   nav#horazonalNav > ul > li {
+       display: block;
+       float: right;
+       background-color: rgb(100, 100, 100);
+       width: 10%;  
+     }
 
+   nav#horazonalNav a {
+       text-align: center;
+       display: block;
+       width: 100%;
+   }
 
+   nav#horazonalNav > ul > li > a:link,
+   nav#horazonalNav > ul > li > a:visited {
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+    nav#horazonalNav > ul > li:active,
+    nav#horazonalNav > ul > li:hover {
+        background-color: rgb(90, 90, 90);
+    }
+
+   img {
+       width: 100%;
+   }
+   
+/* End Header */
 
 
 
