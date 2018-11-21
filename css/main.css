@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -110,7 +112,20 @@ body {
     width: 100%;
 }
 
+header > h1 {
+    display: block;
+    float: left;
+    
+}
+
 /* Nav */
+
+nav#horazonalNav{
+    display: block;
+    float: right;
+    width: 100%;
+}
+
 nav#horazonalNav>ul>li {
     display: block;
     float: right;
@@ -147,24 +162,6 @@ header>img {
 }
 
 /* End Header */
-
-/* Paragraph/ Headings */
-article {
-    max-width: 960px;
-    min-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img#IB {
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-
-article.education>p:first-of-type {
-    display: inline;
-}
 
 
 

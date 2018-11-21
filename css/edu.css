@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+
+body {
+    display: block;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Nav */
+nav#horazonalNav>ul>li {
+    display: block;
+    float: right;
+    background-color: rgba(122, 122, 122, 0.925);
+    width: 8%;
+}
+
+nav#horazonalNav a {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+nav#horazonalNav>ul>li>a:link,
+nav#horazonalNav>ul>li>a:visited {
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav#horazonalNav>ul>li:active,
+nav#horazonalNav>ul>li:hover {
+    background-color: rgba(100, 100, 100, 0.85);
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header>img {
+    width: 100%;
+}
+
+article {
+    max-width: 960px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+img#IB {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 12%;
+    height: 12%;
+}
+
+article.education>p:first-of-type {
+    display: inline;
+}
