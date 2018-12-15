@@ -100,69 +100,60 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-
-
-
-/* Header */
-body {
-    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
 }
 
-header > h1 {
+
+/* header */
+
+h1#name {
     display: block;
     float: left;
+}
+
+
+/* Nav */
+nav.horazonalNav {
+    float: right;
+    background: rgba(100, 100, 100, 0.85);
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    width: 30%;
+}
+
+nav.horazonalNav > ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav.horazonalNav > ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav.horazonalNav ul > li  {
+    float: left;
+    padding: 10px 20px;
+    list-style-type: none;
+    text-align: center;
     
 }
 
-/* Nav */
-
-nav#horazonalNav{
-    display: block;
-    float: right;
-    width: 100%;
-}
-
-nav#horazonalNav>ul>li {
-    display: block;
-    float: right;
-    background-color: rgba(122, 122, 122, 0.925);
-    width: 8%;
-}
-
-nav#horazonalNav a {
-    text-align: center;
-    display: block;
-    width: 100%;
-}
-
-nav#horazonalNav>ul>li>a:link,
-nav#horazonalNav>ul>li>a:visited {
-    display: block;
-    float: left;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+nav.horazonalNav a  {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 
-nav#horazonalNav>ul>li:active,
-nav#horazonalNav>ul>li:hover {
-    background-color: rgba(100, 100, 100, 0.85);
-    text-decoration: none;
-    color: whitesmoke;
-}
 
-header>img {
+/* Image */
+img {
     width: 100%;
+    margin: 0;
 }
-
-/* End Header */
-
+/* Article and pargraphs */
 
 
 
@@ -185,7 +176,7 @@ header>img {
 
 
 
-
+/* Mobile styles */
 
 
 
