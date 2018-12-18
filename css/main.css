@@ -99,22 +99,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+html {
     width: 100%;
 }
 
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+
 /* header */
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 h1#name {
     display: block;
     float: left;
+    margin-left: 0;
 }
 
 
 /* Nav */
 nav.horazonalNav {
+    display: flex;
     float: right;
     background: rgba(100, 100, 100, 0.85);
     margin-top: 1.4em;
@@ -147,17 +160,51 @@ nav.horazonalNav a  {
     color: white;
 }
 
+nav.horazonalNav>ul>li>a:link,
+nav.horazonalNav>ul>li>a:visited {
+    color: #f5f5f5; 
+}
 
-/* Image */
-img {
+nav.horazonalNav>ul>li:active,
+nav.horazonalNav>ul>li:hover {
+    background-color: rgba(100, 100, 100, 0.85);
+}
+
+
+/* Images*/
+div {
+    display: block;
+}
+div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img#canyon {
+    display: block;
+    float: left;
     width: 100%;
     margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ div > a > img#arrow {
+    width: 6%;
+    position: absolute;
+    background: rgb(100, 100, 100);
 }
 /* Article and pargraphs */
 
-
-
-
+article {
+    max-width: 960px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
 
 
 
@@ -177,7 +224,6 @@ img {
 
 
 /* Mobile styles */
-
 
 
 

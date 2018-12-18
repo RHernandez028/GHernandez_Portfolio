@@ -3,42 +3,45 @@
 
 
 body {
-    display: block;
-    width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
 }
 
 /* Nav */
-nav#horazonalNav>ul>li {
-    display: block;
+/* Nav */
+nav.horazonalNav {
     float: right;
-    background-color: rgba(122, 122, 122, 0.925);
-    width: 8%;
+    background: rgba(100, 100, 100, 0.85);
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    width: 30%;
 }
 
-nav#horazonalNav a {
-    text-align: center;
-    display: block;
-    width: 100%;
+nav.horazonalNav > ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav.horazonalNav > ul:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-nav#horazonalNav>ul>li>a:link,
-nav#horazonalNav>ul>li>a:visited {
-    display: block;
+
+nav.horazonalNav ul > li  {
     float: left;
+    padding: 10px 20px;
+    list-style-type: none;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-decoration: none;
-    color: whitesmoke;
+    
 }
 
-nav#horazonalNav>ul>li:active,
-nav#horazonalNav>ul>li:hover {
-    background-color: rgba(100, 100, 100, 0.85);
+nav.horazonalNav a  {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
+
 
 header>img {
     width: 100%;
