@@ -7,6 +7,20 @@ body {
     width: 100%;
 }
 
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+h1#name {
+    display: -webkit-flex;
+    display: flex;
+    float: left;
+    margin-left: 30px;
+    height: 100%;
+}
 
 /* Nav */
 nav.horazonalNav {
@@ -72,5 +86,6 @@ article.education>p:first-of-type {
 }
 
 ul > li{
-    list-style-type: ;
+    line-height: 1.5em;
+    list-style-type: none;
  }
