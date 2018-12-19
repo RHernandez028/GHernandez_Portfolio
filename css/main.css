@@ -99,29 +99,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
-    width: 100%;
-}
-
-
+/* Change the font of the whole body and make it span the whole page. */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
+    height: 100%;
     margin: 0;
 }
-
+/* The margin 0 gets rid of a user style agent from the browser */
 
 /* header */
+/* Container collpase */
 header:after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* make the header have slight space from the edge if the page. !!Make it shrink and grow!! */
 h1#name {
-    display: block;
+    display: -webkit-flex;
+    display: flex;
     float: left;
-    margin-left: 0;
+    margin-left: 10px;
+    height: 100%;
 }
 
 
@@ -129,6 +130,7 @@ h1#name {
 nav.horazonalNav {
     display: flex;
     float: right;
+    flex: 1 1 200px;
     background: rgba(100, 100, 100, 0.85);
     margin-top: 1.4em;
     margin-bottom: 1.4em;
@@ -192,7 +194,9 @@ img#canyon {
     border: 0;
 }
 
+/* div > a img#arrow {
 
+} */
 /* Article and pargraphs */
 
 article {
@@ -202,9 +206,14 @@ article {
     margin-right: auto;
     display: block;
     clear: both;
+    height: 100%;
 }
 
-
+article > p {
+    margin-left: auto;
+    margin-right: auto;
+   width: 80%; 
+}
 
 
 
@@ -227,8 +236,13 @@ article {
     h1,
     nav,
     article {
-        display: block;
+        display: flex;
     }
+
+    h1 {
+        flex 
+    }
+
 
     img {
         display: block;

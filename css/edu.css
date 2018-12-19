@@ -7,7 +7,7 @@ body {
     width: 100%;
 }
 
-/* Nav */
+
 /* Nav */
 nav.horazonalNav {
     float: right;
@@ -56,14 +56,21 @@ article {
     clear: both;
 }
 
-img#IB {
+img#eagle {
     display: block;
     float: left;
     margin-right: 10px;
-    width: 12%;
-    height: 12%;
+    width: 21%;
+    height: 21%;
+}
+p {
+    line-height: 2em;
 }
 
 article.education>p:first-of-type {
     display: inline;
 }
+
+ul > li{
+    list-style-type: ;
+ }
